@@ -15,8 +15,8 @@ class FakeCommentRepository implements ICommentsRepository {
       id: this.comments.length + 1,
       comment,
       post_id,
-      created_at: Date.now(),
-      updated_at: Date.now(),
+      created_at: new Date(),
+      updated_at: new Date(),
     });
 
     this.comments.push(newComment);

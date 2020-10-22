@@ -6,7 +6,7 @@ import ICommentsRepository from '../repositories/models/ICommentsRepository';
 @injectable()
 export default class ListCommentService {
   constructor(
-    @inject('IPostsRepository')
+    @inject('CommentsRepository')
     private commentsRepository: ICommentsRepository,
   ) {}
 

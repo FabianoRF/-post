@@ -7,7 +7,7 @@ import {
 } from 'typeorm';
 import Post from './Post';
 
-@Entity('comment')
+@Entity('comments')
 export default class Comment {
   @PrimaryGeneratedColumn('increment')
   id: number;
@@ -18,7 +18,7 @@ export default class Comment {
   @Column()
   post_id: number;
 
-  @ManyToOne(() => Post, post => post.id)
+  @ManyToOne(() => Post)
   @JoinColumn({ name: 'post_id' })
   post: Post;
 

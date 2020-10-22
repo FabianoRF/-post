@@ -7,7 +7,7 @@ import ICreateCommentDTO from '../repositories/dtos/ICreateCommentDTO';
 @injectable()
 export default class CreatePostService {
   constructor(
-    @inject('IPostsRepository')
+    @inject('CommentsRepository')
     private commentsRepository: ICommentsRepository,
   ) {}
 

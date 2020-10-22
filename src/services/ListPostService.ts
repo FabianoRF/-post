@@ -6,7 +6,7 @@ import IPostsRepository from '../repositories/models/IPostsRepository';
 @injectable()
 export default class ListPostService {
   constructor(
-    @inject('IPostsRepository')
+    @inject('PostsRepository')
     private postsRepository: IPostsRepository,
   ) {}
 
