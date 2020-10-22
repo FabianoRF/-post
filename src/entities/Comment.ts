@@ -15,6 +15,9 @@ export default class Comment {
   @Column()
   comment: string;
 
+  @Column()
+  post_id: number;
+
   @ManyToOne(() => Post, post => post.id)
   @JoinColumn({ name: 'post_id' })
   post: Post;
