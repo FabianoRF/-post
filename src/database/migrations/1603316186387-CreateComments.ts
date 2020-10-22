@@ -4,7 +4,7 @@ export default class CreateComents1603316186387 implements MigrationInterface {
   public async up(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.createTable(
       new Table({
-        name: 'coments',
+        name: 'comments',
         columns: [
           {
             name: 'id',
@@ -15,7 +15,7 @@ export default class CreateComents1603316186387 implements MigrationInterface {
             generationStrategy: 'increment',
           },
           {
-            name: 'coment',
+            name: 'comment',
             type: 'text',
           },
           {
@@ -35,7 +35,7 @@ export default class CreateComents1603316186387 implements MigrationInterface {
         ],
         foreignKeys: [
           {
-            name: 'PostComent',
+            name: 'PostComment',
             columnNames: ['post_id'],
             referencedTableName: 'posts',
             referencedColumnNames: ['id'],
