@@ -2,14 +2,23 @@
 
 
 <p align="center">
-  <img src = "frontend/assets/thumb.png" width="700px" />
+  <img src = "frontend/src/assets/thumb.png" width="700px" />
 </p>
+
+
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/fabianorf/-post">
+  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/fabianorf/-post">
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/fabianorf/-post">
+</p>
+
 
 ## Sumário
 
 - [Introdução](#Introdução)
 - [Instalação](#Instalação)
-- [Tecnologias](#Tecnologias)
+- [Rotas da API](#Rotas)
+- [Arquitetura](#Arquitetura)
 
 
 ## Introdução
@@ -27,8 +36,7 @@
 
 **Banco de dados**
 
-- Este projeto está utilizando de um banco de dados sqlite local, localizado em 'backend/src/database/database.sqlite', postanto não será necessário fazer nenhum tipo de 
-conexão externa.
+- Este projeto está utilizando de um banco de dados sqlite local, localizado em 'backend/src/database/database.sqlite', postanto não será necessário fazer nenhum tipo de conexão externa.
 
 
 **Back-end**
@@ -70,7 +78,7 @@ Para o Front-end e Back-end foi utilizado Typescript. No Back-end: Node + expres
 - Foram utilizados de conceitos SOLID em conjunto com Repositories e Services patterns, sendo implementados: single responsibility, Open-Closed Principle, injeção de depêndencias através da bilioteca
 tsyringe e etc.
 
-Organização de pastas:
+#### Organização de pastas:
 
 - Dentro do src do backend encontram se as seguintes pastas
 
