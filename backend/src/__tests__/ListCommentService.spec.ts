@@ -2,7 +2,7 @@ import FakePostsRepository from '../repositories/fakes/FakePostsRepository';
 import FakeCommentsRepository from '../repositories/fakes/FakeCommentsRepository';
 import ListCommentService from '../services/ListCommentService';
 
-describe('CreatePost', () => {
+describe('ListComment', () => {
   it('should be able to list all comments pertaining to a post', async () => {
     const fakePostRepository = new FakePostsRepository();
     const fakeCommentRepository = new FakeCommentsRepository();

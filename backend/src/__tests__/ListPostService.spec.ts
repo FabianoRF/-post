@@ -23,6 +23,7 @@ describe('ListPosts', () => {
 
     const post = await listPost.execute(1);
 
+    expect(post).toBeTruthy();
     expect(post).toHaveProperty('id', 1);
   });
 });

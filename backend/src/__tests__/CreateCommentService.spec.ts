@@ -2,7 +2,7 @@ import FakePostsRepository from '../repositories/fakes/FakePostsRepository';
 import FakeCommentsRepository from '../repositories/fakes/FakeCommentsRepository';
 import CreateCommentService from '../services/CreateCommentService';
 
-describe('CreatePost', () => {
+describe('CreateComment', () => {
   it('should be able to create a new comment pertaining to a post', async () => {
     const fakePostRepository = new FakePostsRepository();
     const fakeCommentRepostiry = new FakeCommentsRepository();
